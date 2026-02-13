@@ -35,3 +35,16 @@ filtro.addEventListener("change", function() {
 });
 
 renderizarChamados(chamados);
+
+const busca = document.getElementById("busca");
+
+busca.addEventListener("input", function() {
+    const termo = this.value.toLowerCase();
+
+    const filtrados = chamados.filter(c =>
+        c.titulo.toLowerCase().includes(termo)
+    );
+
+    renderizarChamados(filtrados);
+});
+
