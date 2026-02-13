@@ -1,0 +1,39 @@
+<!DOCTYPE html>
+<html lang="pt-BR">
+<head>
+    <meta charset="UTF-8">
+    <title>Painel de Suporte</title>
+    <link rel="stylesheet" href="style.css">
+</head>
+<body>
+
+    <h1>Painel de Chamados</h1>
+
+    <select id="filtro">
+        <option value="Todos">Todos</option>
+        <option value="Aberto">Aberto</option>
+        <option value="Em andamento">Em andamento</option>
+        <option value="Resolvido">Resolvido</option>
+    </select>
+
+    <table id="tabela">
+        <tr data-status="Aberto">
+            <td>Erro no login</td>
+            <td>Alta</td>
+        </tr>
+
+        <tr data-status="Em andamento">
+            <td>Bug no dashboard</td>
+            <td>Média</td>
+        </tr>
+
+        <tr data-status="Resolvido">
+            <td>Lentidão no sistema</td>
+            <td>Baixa</td>
+        </tr>
+    </table>
+
+    <script src="script.js"></script>
+
+</body>
+</html>
